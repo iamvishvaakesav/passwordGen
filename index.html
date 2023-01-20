@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>PGen</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<script defer type="module" src="./main.js"></script>
+	<body>
+		<div class="mainContainer">
+			<div class="passwordMasterContainer">
+				<div class="passwordContainer">
+					<div class="generatedPassword">
+						<h3 class="password">Hello 123</h3>
+						<div class="ratingScaleWrapper">
+							<div class="ratingScale"></div>
+						</div>
+					</div>
+					<img
+						src="/copyicon.svg"
+						alt="image of a copy to clipboard icon"
+						class="copyIcon"
+					/>
+				</div>
+
+				<div class="passwordConfig">
+					<div class="pLengthContainer">
+						<div class="pLengthOptions">
+							<input type="range" min="4" max="36" class="pLengthScale" />
+						</div>
+
+						<div class="pLengthLabel">8 characters</div>
+					</div>
+					<div class="passwordOptions">
+						<form class="passwordOptionsForm">
+							<div class="passwordOptionContainer">
+								<input
+									type="checkbox"
+									value="upper"
+									id="upper"
+									class="passwordOption"
+								/>
+								<label for="upper"> Include Upper Case</label>
+							</div>
+							<div class="passwordOptionContainer">
+								<input
+									type="checkbox"
+									value="lower"
+									id="lower"
+									checked
+									class="passwordOption"
+								/>
+								<label for="lower">Include Lower Case</label>
+							</div>
+							<div class="passwordOptionContainer">
+								<input
+									type="checkbox"
+									value="digit"
+									id="digit"
+									class="passwordOption"
+								/>
+								<label for="numbers">Include Numbers</label>
+							</div>
+							<div class="passwordOptionContainer">
+								<input
+									type="checkbox"
+									value="symbol"
+									id="symbol"
+									class="passwordOption"
+								/>
+								<label for="symbols">Include Symbols</label>
+							</div>
+
+							<div class="pGenButtonContainer">
+								<button class="pGenButton" type="submit">Copy</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
