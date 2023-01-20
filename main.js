@@ -33,7 +33,6 @@ const copyIcon = document.querySelector(".copyIcon");
 
 passwordConfig.forEach((ele) => {
 	ele.checked = false;
-	console.log(ele);
 });
 
 // add a event listner of on change to passwordOption and updates the state
