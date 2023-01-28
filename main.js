@@ -92,7 +92,6 @@ passwordScale.oninput = function () {
 	// as the scale changes generate the password and rate it
 	const generatedPassword = generatePassword();
 	password.textContent = generatedPassword;
-	console.log("rating: ", rating);
 
 	let percentage = 0;
 
@@ -100,7 +99,6 @@ passwordScale.oninput = function () {
 		// console.log("password length: ", generatedPassword.length);
 		percentage = ((rating + generatedPassword.length) / 22) * 100;
 
-		console.log("percentage: ", percentage);
 		if (percentage <= 40) {
 			passwordRatingScale.style.backgroundColor = "rgb(248 113 113)";
 		}
