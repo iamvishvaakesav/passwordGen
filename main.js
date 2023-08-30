@@ -175,7 +175,7 @@ copyIcon.addEventListener("click", () => {
 		.then(() => {
 			// upon successful copy, show password copied.
 			// reset the password field after copied
-			generatedPasswordDisplay.textContent = "Copied :D ";
+			// generatedPasswordDisplay.textContent = "Copied :D ";
 		})
 		.catch((e) => {
 			console.log(e);
